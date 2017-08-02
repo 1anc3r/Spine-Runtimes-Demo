@@ -1,0 +1,180 @@
+
+bone.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Arrow
+  rotate: false
+  xy: 410, 75
+  size: 66, 11
+  orig: 66, 11
+  offset: 0, 0
+  index: -1
+EYES_3
+  rotate: true
+  xy: 178, 2
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+EYES_4
+  rotate: false
+  xy: 332, 60
+  size: 13, 19
+  orig: 13, 19
+  offset: 0, 0
+  index: -1
+Eyes
+  rotate: false
+  xy: 73, 2
+  size: 30, 15
+  orig: 30, 15
+  offset: 0, 0
+  index: -1
+Eyes_1
+  rotate: true
+  xy: 390, 69
+  size: 10, 15
+  orig: 10, 15
+  offset: 0, 0
+  index: -1
+Eyes_2
+  rotate: false
+  xy: 284, 27
+  size: 8, 13
+  orig: 8, 13
+  offset: 0, 0
+  index: -1
+Fire
+  rotate: false
+  xy: 2, 65
+  size: 91, 61
+  orig: 91, 61
+  offset: 0, 0
+  index: -1
+Fire_1
+  rotate: true
+  xy: 95, 26
+  size: 44, 71
+  orig: 44, 71
+  offset: 0, 0
+  index: -1
+Fire_2
+  rotate: true
+  xy: 2, 10
+  size: 53, 69
+  orig: 53, 69
+  offset: 0, 0
+  index: -1
+Fire_4
+  rotate: true
+  xy: 95, 72
+  size: 54, 98
+  orig: 54, 98
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 168, 18
+  size: 64, 52
+  orig: 64, 52
+  offset: 0, 0
+  index: -1
+Head_1
+  rotate: true
+  xy: 73, 19
+  size: 44, 19
+  orig: 44, 19
+  offset: 0, 0
+  index: -1
+LArm
+  rotate: true
+  xy: 369, 69
+  size: 10, 19
+  orig: 10, 19
+  offset: 0, 0
+  index: -1
+LForearm
+  rotate: true
+  xy: 151, 2
+  size: 14, 25
+  orig: 14, 25
+  offset: 0, 0
+  index: -1
+LLeg
+  rotate: true
+  xy: 347, 67
+  size: 12, 20
+  orig: 12, 20
+  offset: 0, 0
+  index: -1
+LShoulder
+  rotate: true
+  xy: 301, 52
+  size: 27, 29
+  orig: 27, 29
+  offset: 0, 0
+  index: -1
+MainWeapon
+  rotate: true
+  xy: 410, 88
+  size: 38, 93
+  orig: 38, 93
+  offset: 0, 0
+  index: -1
+MainWeapon_1
+  rotate: true
+  xy: 195, 78
+  size: 48, 104
+  orig: 48, 104
+  offset: 0, 0
+  index: -1
+RArm
+  rotate: true
+  xy: 200, 5
+  size: 11, 25
+  orig: 11, 25
+  offset: 0, 0
+  index: -1
+RForearm
+  rotate: true
+  xy: 120, 9
+  size: 15, 29
+  orig: 15, 29
+  offset: 0, 0
+  index: -1
+RLeg
+  rotate: false
+  xy: 105, 2
+  size: 13, 22
+  orig: 13, 22
+  offset: 0, 0
+  index: -1
+RShoulder
+  rotate: false
+  xy: 478, 55
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 301, 81
+  size: 107, 45
+  orig: 107, 45
+  offset: 0, 0
+  index: -1
+TorsoBottom
+  rotate: true
+  xy: 284, 42
+  size: 34, 13
+  orig: 34, 13
+  offset: 0, 0
+  index: -1
+TorsoTop
+  rotate: false
+  xy: 234, 27
+  size: 48, 49
+  orig: 48, 49
+  offset: 0, 0
+  index: -1
