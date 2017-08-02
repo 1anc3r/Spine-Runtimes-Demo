@@ -9,12 +9,13 @@ import android.widget.Button;
 import me.lancer.spineruntimesdemo.activity.AlienActivity;
 import me.lancer.spineruntimesdemo.activity.BoneActivity;
 import me.lancer.spineruntimesdemo.activity.DragonActivity;
+import me.lancer.spineruntimesdemo.activity.GoblinActivity;
 import me.lancer.spineruntimesdemo.activity.SpeedyActivity;
 import me.lancer.spineruntimesdemo.activity.SpineBoyActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnSpineBoy, btnSpeedy, btnAlien, btnBone, btnDragon;
+    Button btnSpineBoy, btnSpeedy, btnGoblin, btnAlien, btnBone, btnDragon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnSpeedy = (Button) findViewById(R.id.btn_speedy);
         btnSpeedy.setOnClickListener(vOnClickListener);
+
+        btnGoblin = (Button) findViewById(R.id.btn_goblin);
+        btnGoblin.setOnClickListener(vOnClickListener);
 
         btnAlien = (Button) findViewById(R.id.btn_alien);
         btnAlien.setOnClickListener(vOnClickListener);
@@ -47,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
             } else if (view == btnSpeedy) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, SpeedyActivity.class);
+                startActivity(intent);
+            } else if (view == btnGoblin) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, GoblinActivity.class);
                 startActivity(intent);
             } else if (view == btnAlien) {
                 Intent intent = new Intent();

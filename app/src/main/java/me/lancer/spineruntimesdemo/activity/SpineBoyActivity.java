@@ -20,15 +20,12 @@ public class SpineBoyActivity extends AppActivity {
     SpineBoy spineBoy;
     View spineBoyView;
 
-    long startTime;
-    int tag = 0;
-    int oldOffsetX;
-    int oldOffsetY;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blank);
+
+
 
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.r = cfg.g = cfg.b = cfg.a = 8;
@@ -45,46 +42,35 @@ public class SpineBoyActivity extends AppActivity {
     public void addSpineBoy() {
         final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
 
         spineBoyView.setOnTouchListener(new View.OnTouchListener() {
+
             float lastX, lastY;
 
             public boolean onTouch(View v, MotionEvent event) {
                 final int action = event.getAction();
-                float x = event.getX();
-                float y = event.getY();
-                if (tag == 0) {
-                    oldOffsetX = layoutParams.x;
-                    oldOffsetY = layoutParams.y;
-                }
+                float x = event.getRawX();
+                float y = event.getRawY();
                 if (action == MotionEvent.ACTION_DOWN) {
                     lastX = x;
                     lastY = y;
-                    startTime = System.currentTimeMillis();
                 } else if (action == MotionEvent.ACTION_MOVE) {
                     layoutParams.x += (int) (x - lastX);
                     layoutParams.y += (int) (y - lastY);
-                    tag = 1;
                     windowManager.updateViewLayout(spineBoyView, layoutParams);
+                    lastX = x;
+                    lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    tag = 0;
                     spineBoy.animate();
                 }
                 return true;
             }
         });
-        int type = 0;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            type = WindowManager.LayoutParams.TYPE_TOAST;
-        } else {
-            type = WindowManager.LayoutParams.TYPE_PHONE;
-        }
-        layoutParams.type = type;
+        layoutParams.type = WindowManager.LayoutParams.TYPE_TOAST;
         layoutParams.flags = 40;
-        layoutParams.x = 0;
-        layoutParams.y = 0;
         layoutParams.width = dp2Px(144);
-        layoutParams.height = dp2Px(176);
+        layoutParams.height = dp2Px(144);
         layoutParams.format = -3;
         windowManager.addView(spineBoyView, layoutParams);
     }

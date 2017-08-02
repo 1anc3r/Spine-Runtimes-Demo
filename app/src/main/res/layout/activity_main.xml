@@ -19,6 +19,12 @@
         android:text="Speedy"/>
 
     <Button
+        android:id="@+id/btn_goblin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goblin"/>
+
+    <Button
         android:id="@+id/btn_alien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

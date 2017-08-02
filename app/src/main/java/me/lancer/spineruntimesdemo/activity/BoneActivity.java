@@ -20,11 +20,6 @@ public class BoneActivity extends AppActivity {
     Bone bone;
     View boneView;
 
-    long startTime;
-    int tag = 0;
-    int oldOffsetX;
-    int oldOffsetY;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,47 +34,38 @@ public class BoneActivity extends AppActivity {
             glView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
             glView.setZOrderOnTop(true);
         }
-        addDragon();
+        addBone();
     }
 
-    public void addDragon() {
+    public void addBone() {
         final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
 
         boneView.setOnTouchListener(new View.OnTouchListener() {
+
             float lastX, lastY;
 
             public boolean onTouch(View v, MotionEvent event) {
                 final int action = event.getAction();
-                float x = event.getX();
-                float y = event.getY();
-                if (tag == 0) {
-                    oldOffsetX = layoutParams.x;
-                    oldOffsetY = layoutParams.y;
-                }
+                float x = event.getRawX();
+                float y = event.getRawY();
                 if (action == MotionEvent.ACTION_DOWN) {
                     lastX = x;
                     lastY = y;
-                    startTime = System.currentTimeMillis();
                 } else if (action == MotionEvent.ACTION_MOVE) {
                     layoutParams.x += (int) (x - lastX);
                     layoutParams.y += (int) (y - lastY);
-                    tag = 1;
                     windowManager.updateViewLayout(boneView, layoutParams);
+                    lastX = x;
+                    lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    tag = 0;
                     bone.animate();
                 }
                 return true;
             }
         });
-        int type = 0;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            type = WindowManager.LayoutParams.TYPE_TOAST;
-        } else {
-            type = WindowManager.LayoutParams.TYPE_PHONE;
-        }
-        layoutParams.type = type;
+        layoutParams.type = WindowManager.LayoutParams.TYPE_TOAST;
         layoutParams.flags = 40;
         layoutParams.width = dp2Px(144);
         layoutParams.height = dp2Px(144);

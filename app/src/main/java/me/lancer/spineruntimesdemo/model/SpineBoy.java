@@ -50,7 +50,7 @@ public class SpineBoy extends ApplicationAdapter {
 
         // Queue animations on track 0.
         state.setAnimation(0, "walk", true);
-
+        state.addAnimation(0, "run", false, 2); // Jump after 2 seconds.
         state.addAnimation(0, "walk", true, 0); // Run after the jump.
     }
 

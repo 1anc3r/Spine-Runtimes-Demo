@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.esotericsoftware.spine.AnimationState;
@@ -17,7 +18,7 @@ import com.esotericsoftware.spine.SkeletonRendererDebug;
 public class Hero extends ApplicationAdapter {
 
     OrthographicCamera camera;
-    SpriteBatch batch;
+    PolygonSpriteBatch batch;
     SkeletonRenderer renderer;
     SkeletonRendererDebug debugRenderer;
     TextureAtlas atlas;
@@ -27,9 +28,9 @@ public class Hero extends ApplicationAdapter {
 
     public void create() {
         camera = new OrthographicCamera();
-        batch = new SpriteBatch();
+        batch = new PolygonSpriteBatch();
         renderer = new SkeletonRenderer();
-        renderer.setPremultipliedAlpha(true); // PMA results in correct blending without outlines.
+        renderer.setPremultipliedAlpha(false); // PMA results in correct blending without outlines.
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);

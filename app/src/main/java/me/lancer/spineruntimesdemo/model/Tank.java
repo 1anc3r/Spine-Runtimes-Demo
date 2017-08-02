@@ -35,7 +35,7 @@ public class Tank extends ApplicationAdapter {
         debugRenderer.setRegionAttachments(false);
         atlas = new TextureAtlas(Gdx.files.internal("tank.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(0.5f); // Load the skeleton at 60% the size it was in Spine.
+        json.setScale(1.0f); // Load the skeleton at 60% the size it was in Spine.
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("tank.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
