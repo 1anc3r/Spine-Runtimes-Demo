@@ -14,7 +14,7 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
-public class Bone extends ApplicationAdapter {
+public class Alien extends ApplicationAdapter {
 
     OrthographicCamera camera;
     SpriteBatch batch;
@@ -33,24 +33,25 @@ public class Bone extends ApplicationAdapter {
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("bone.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("alien.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(1.6f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("bone.json"));
+        json.setScale(0.5f); // Load the skeleton at 60% the size it was in Spine.
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("alien.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(-350, 750);
+        skeleton.setPosition(250, 100);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("walk", "walk", 0.2f);
+        stateData.setMix("run", "jump", 0.2f);
+        stateData.setMix("jump", "run", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
         state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
-        state.setAnimation(0, "walk", true);
+        state.setAnimation(0, "run", true);
 
-        state.addAnimation(0, "walk", true, 0); // Run after the jump.
+        state.addAnimation(0, "run", true, 0); // Run after the jump.
     }
 
     public void render() {
@@ -84,7 +85,11 @@ public class Bone extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "walk", true, 0);
+        state.addAnimation(0, "run", false, 0); // Jump after 2 seconds.
+        state.addAnimation(0, "jump", false, 0);
+        state.addAnimation(0, "hit", false, 0);
+        state.addAnimation(0, "death", false, 0);
+        state.addAnimation(0, "run", true, 0); // Run after the jump.
     }
 
     public void zoomBig() {

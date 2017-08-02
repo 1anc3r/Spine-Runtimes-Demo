@@ -14,7 +14,7 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
-public class Bone extends ApplicationAdapter {
+public class Goblin extends ApplicationAdapter {
 
     OrthographicCamera camera;
     SpriteBatch batch;
@@ -33,13 +33,13 @@ public class Bone extends ApplicationAdapter {
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("bone.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("goblins.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(1.6f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("bone.json"));
+        json.setScale(0.5f); // Load the skeleton at 60% the size it was in Spine.
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("goblins.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(-350, 750);
+        skeleton.setPosition(250, 100);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
         stateData.setMix("walk", "walk", 0.2f);
@@ -84,7 +84,7 @@ public class Bone extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "walk", true, 0);
+        state.addAnimation(0, "walk", false, 0); // Jump after 2 seconds.
     }
 
     public void zoomBig() {

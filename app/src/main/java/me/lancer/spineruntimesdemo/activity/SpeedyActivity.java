@@ -13,12 +13,12 @@ import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
 
 import me.lancer.spineruntimesdemo.R;
-import me.lancer.spineruntimesdemo.model.Bone;
+import me.lancer.spineruntimesdemo.model.Speedy;
 
-public class BoneActivity extends AppActivity {
+public class SpeedyActivity extends AppActivity {
 
-    Bone bone;
-    View boneView;
+    Speedy speedy;
+    View speedyView;
 
     long startTime;
     int tag = 0;
@@ -32,21 +32,21 @@ public class BoneActivity extends AppActivity {
 
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.r = cfg.g = cfg.b = cfg.a = 8;
-        bone = new Bone();
-        boneView = initializeForView(bone, cfg);
-        if (boneView instanceof SurfaceView) {
-            SurfaceView glView = (SurfaceView) boneView;
+        speedy = new Speedy();
+        speedyView = initializeForView(speedy, cfg);
+        if (speedyView instanceof SurfaceView) {
+            SurfaceView glView = (SurfaceView) speedyView;
             glView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
             glView.setZOrderOnTop(true);
         }
-        addDragon();
+        addSpineBoy();
     }
 
-    public void addDragon() {
+    public void addSpineBoy() {
         final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
 
-        boneView.setOnTouchListener(new View.OnTouchListener() {
+        speedyView.setOnTouchListener(new View.OnTouchListener() {
             float lastX, lastY;
 
             public boolean onTouch(View v, MotionEvent event) {
@@ -65,10 +65,10 @@ public class BoneActivity extends AppActivity {
                     layoutParams.x += (int) (x - lastX);
                     layoutParams.y += (int) (y - lastY);
                     tag = 1;
-                    windowManager.updateViewLayout(boneView, layoutParams);
+                    windowManager.updateViewLayout(speedyView, layoutParams);
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
                     tag = 0;
-                    bone.animate();
+                    speedy.animate();
                 }
                 return true;
             }
@@ -81,10 +81,12 @@ public class BoneActivity extends AppActivity {
         }
         layoutParams.type = type;
         layoutParams.flags = 40;
+        layoutParams.x = 0;
+        layoutParams.y = 0;
         layoutParams.width = dp2Px(144);
-        layoutParams.height = dp2Px(144);
+        layoutParams.height = dp2Px(176);
         layoutParams.format = -3;
-        windowManager.addView(boneView, layoutParams);
+        windowManager.addView(speedyView, layoutParams);
     }
 
     public int dp2Px(float value) {
@@ -94,7 +96,7 @@ public class BoneActivity extends AppActivity {
 
     @Override
     protected void onDestroy() {
-        getWindowManager().removeView(boneView);
+        getWindowManager().removeView(speedyView);
         super.onDestroy();
     }
 }
