@@ -1,4 +1,4 @@
-package me.lancer.spineruntimesdemo;
+package me.lancer.spineruntimesdemo.activity;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
 
+import me.lancer.spineruntimesdemo.R;
 import me.lancer.spineruntimesdemo.model.Dragon;
 
 public class DragonActivity extends AppActivity {
@@ -66,32 +67,8 @@ public class DragonActivity extends AppActivity {
                     tag = 1;
                     windowManager.updateViewLayout(dragonView, layoutParams);
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    int newOffsetX = layoutParams.x;
-                    int newOffsetY = layoutParams.y;
-                    long endTime = System.currentTimeMillis();
-                    if ((Math.abs(oldOffsetX - newOffsetX) + Math.abs(oldOffsetY - newOffsetY)) < 10) {
-                        if (endTime - startTime > 500) {
-                            if (dragonView.getTag() == null) {
-                                dragon.zoomBig();
-                                dragonView.setTag("");
-                                layoutParams.width = dp2Px(160);
-                                layoutParams.height = dp2Px(280);
-                                windowManager.updateViewLayout(dragonView, layoutParams);
-                            } else {
-                                dragon.zoomSmall();
-                                dragonView.setTag(null);
-                                layoutParams.width = dp2Px(80);
-                                layoutParams.height = dp2Px(140);
-                                windowManager.updateViewLayout(dragonView, layoutParams);
-                            }
-
-                        } else {
-                            dragon.animate();
-                        }
-                    } else {
-                        tag = 0;
-                        dragon.animate();
-                    }
+                    tag = 0;
+                    dragon.animate();
                 }
                 return true;
             }

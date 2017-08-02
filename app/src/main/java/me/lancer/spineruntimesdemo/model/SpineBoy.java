@@ -35,18 +35,18 @@ public class SpineBoy extends ApplicationAdapter {
         debugRenderer.setRegionAttachments(false);
         atlas = new TextureAtlas(Gdx.files.internal("spineboy.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(0.5f); // Load the skeleton at 60% the size it was in Spine.
+        json.setScale(0.3f); // Load the skeleton at 60% the size it was in Spine.
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("spineboy.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(240, 0);
+        skeleton.setPosition(200, 0);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
         stateData.setMix("walk", "run", 0.2f);
         stateData.setMix("run", "walk", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
-        state.setTimeScale(0.5f); // Slow all animations down to 50% speed.
+        state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
         state.setAnimation(0, "walk", true);

@@ -14,7 +14,7 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
-public class Dragon extends ApplicationAdapter {
+public class Goblins extends ApplicationAdapter {
 
     OrthographicCamera camera;
     SpriteBatch batch;
@@ -33,24 +33,24 @@ public class Dragon extends ApplicationAdapter {
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("dragon.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("goblins.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
         json.setScale(0.5f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("dragon.json"));
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("goblins.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
         skeleton.setPosition(180, 160);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("flying", "flying", 0.2f);
+        stateData.setMix("walk", "walk", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
-        state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
+        state.setTimeScale(0.5f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
-        state.setAnimation(0, "flying", true);
+        state.setAnimation(0, "walk", true);
 
-        state.addAnimation(0, "flying", true, 0); // Run after the jump.
+        state.addAnimation(0, "walk", true, 0); // Run after the jump.
     }
 
     public void render() {
@@ -84,7 +84,7 @@ public class Dragon extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "flying", true, 0);
+        state.addAnimation(0, "walk", true, 0);
     }
 
     public void zoomBig() {

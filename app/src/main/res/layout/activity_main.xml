@@ -4,18 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="me.lancer.ghostintheshell.MainActivity">
+    tools:context="me.lancer.spineruntimesdemo.MainActivity">
 
     <Button
         android:id="@+id/btn_spine_boy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Spine Boy"/>
+        android:text="SpineBoy"/>
+
+    <Button
+        android:id="@+id/btn_bone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bone"/>
 
     <Button
         android:id="@+id/btn_dragon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Dragon"/>
+        android:text="Dragon"/>
 
 </LinearLayout>

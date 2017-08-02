@@ -1,4 +1,4 @@
-package me.lancer.spineruntimesdemo;
+package me.lancer.spineruntimesdemo.activity;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -12,6 +12,7 @@ import android.view.WindowManager;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
 
+import me.lancer.spineruntimesdemo.R;
 import me.lancer.spineruntimesdemo.model.SpineBoy;
 
 public class SpineBoyActivity extends AppActivity {
@@ -66,32 +67,8 @@ public class SpineBoyActivity extends AppActivity {
                     tag = 1;
                     windowManager.updateViewLayout(spineBoyView, layoutParams);
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    int newOffsetX = layoutParams.x;
-                    int newOffsetY = layoutParams.y;
-                    long endTime = System.currentTimeMillis();
-                    if ((Math.abs(oldOffsetX - newOffsetX) + Math.abs(oldOffsetY - newOffsetY)) < 10) {
-                        if (endTime - startTime > 500) {
-                            if (spineBoyView.getTag() == null) {
-                                spineBoy.zoomBig();
-                                spineBoyView.setTag("");
-                                layoutParams.width = dp2Px(160);
-                                layoutParams.height = dp2Px(280);
-                                windowManager.updateViewLayout(spineBoyView, layoutParams);
-                            } else {
-                                spineBoy.zoomSmall();
-                                spineBoyView.setTag(null);
-                                layoutParams.width = dp2Px(80);
-                                layoutParams.height = dp2Px(140);
-                                windowManager.updateViewLayout(spineBoyView, layoutParams);
-                            }
-
-                        } else {
-                            spineBoy.animate();
-                        }
-                    } else {
-                        tag = 0;
-                        spineBoy.animate();
-                    }
+                    tag = 0;
+                    spineBoy.animate();
                 }
                 return true;
             }
@@ -106,8 +83,8 @@ public class SpineBoyActivity extends AppActivity {
         layoutParams.flags = 40;
         layoutParams.x = 0;
         layoutParams.y = 0;
-        layoutParams.width = dp2Px(144);
-        layoutParams.height = dp2Px(288);
+        layoutParams.width = dp2Px(128);
+        layoutParams.height = dp2Px(128);
         layoutParams.format = -3;
         windowManager.addView(spineBoyView, layoutParams);
     }
