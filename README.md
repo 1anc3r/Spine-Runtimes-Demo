@@ -1,14 +1,16 @@
 # SpineRuntimesDemo
 <img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width = "96" height = "96" alt="icon"/>
 
+下载链接:http://fir.im/spineruntimes
+
 ## Spine 是什么？
 
 动画能给游戏带来生机和灵气。我们相信创作一段美妙的动画，不仅需要强大的软件工具，更需要一套牛B的工作流程。Spine专注于此，为您创建惊艳的骨骼动画，并将其整合到游戏当中，提供了一套高效的工作流程。
 
 ## 运行效果:
 
-<img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/spineboy.gif" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/dragon.gif" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/Screenshot_20170802-155256.png" width = "288" height = "512" alt="" />
-<img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/Screenshot_20170802-155241.png" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/Screenshot_20170802-155237.png" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/Screenshot_20170802-155252.png" width = "288" height = "512" alt="" />
+<img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/20170803_144535.gif" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/20170803_144258.gif" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/20170803_144358.gif" width = "288" height = "512" alt="" />
+<img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/20170803_144419.gif" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/20170803_144435.gif" width = "288" height = "512" alt="" /><img src="https://github.com/1anc3r/SpineRuntimesDemo/blob/master/screenshot/20170803_144518.gif" width = "288" height = "512" alt="" />
 
 ## 关于
 ### 组织
