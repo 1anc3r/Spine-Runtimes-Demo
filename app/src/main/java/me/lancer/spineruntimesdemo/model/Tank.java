@@ -84,7 +84,7 @@ public class Tank extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "shoot", false, 0); // Jump after 2 seconds.
+        state.addAnimation(0, "shoot", true, 0); // Jump after 2 seconds.
         state.addAnimation(0, "drive", true, 0); // Run after the jump.
     }
 

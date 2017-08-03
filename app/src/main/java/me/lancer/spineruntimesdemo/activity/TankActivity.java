@@ -34,10 +34,10 @@ public class TankActivity extends AppActivity {
             glView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
             glView.setZOrderOnTop(true);
         }
-        addDragon();
+        addTank();
     }
 
-    public void addDragon() {
+    public void addTank() {
         final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;

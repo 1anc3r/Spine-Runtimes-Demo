@@ -49,6 +49,7 @@ public class Raptor extends ApplicationAdapter {
 
         // Queue animations on tracks 0 and 1.
         state.setAnimation(0, "walk", true);
+
         state.addAnimation(1, "gun-grab", false, 2); // Keys in higher tracks override the pose from lower tracks.
     }
 

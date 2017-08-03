@@ -29,7 +29,7 @@ public class Speedy extends ApplicationAdapter {
         camera = new OrthographicCamera();
         batch = new SpriteBatch();
         renderer = new SkeletonRenderer();
-        renderer.setPremultipliedAlpha(true); // PMA results in correct blending without outlines.
+        renderer.setPremultipliedAlpha(false); // PMA results in correct blending without outlines.
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
@@ -84,9 +84,21 @@ public class Speedy extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "run-linear", false, 0);
-        state.addAnimation(0, "run-rough", false, 0);
-        state.addAnimation(0, "run", true, 0); // Run after the jump.
+        run();
+        runlinear();
+        runrough();
+    }
+
+    public void run() {
+        state.addAnimation(0, "run", true, 0);
+    }
+
+    public void runlinear() {
+        state.addAnimation(0, "run-linear", true, 0);
+    }
+
+    public void runrough() {
+        state.addAnimation(0, "run-rough", true, 0);
     }
 
     public void zoomBig() {

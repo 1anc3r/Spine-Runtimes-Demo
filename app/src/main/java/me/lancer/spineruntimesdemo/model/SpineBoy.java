@@ -42,16 +42,15 @@ public class SpineBoy extends ApplicationAdapter {
         skeleton.setPosition(200, 0);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("walk", "run", 0.2f);
-        stateData.setMix("run", "walk", 0.2f);
+        stateData.setMix("run", "run", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
         state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
-        state.setAnimation(0, "walk", true);
-        state.addAnimation(0, "run", false, 2); // Jump after 2 seconds.
-        state.addAnimation(0, "walk", true, 0); // Run after the jump.
+        state.setAnimation(0, "run", true);
+
+        state.addAnimation(0, "run", true, 0); // Run after the jump.
     }
 
     public void render() {
@@ -85,13 +84,33 @@ public class SpineBoy extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "run", false, 0); // Jump after 2 seconds.
-        state.addAnimation(0, "jump", false, 0);
-        state.addAnimation(0, "idle", false, 0);
-        state.addAnimation(0, "shoot", false, 0);
-        state.addAnimation(0, "hit", false, 0);
-        state.addAnimation(0, "death", false, 0);
-        state.addAnimation(0, "walk", true, 0); // Run after the jump.
+        run();
+        jump();
+        run();
+    }
+
+    public void run() {
+        state.addAnimation(0, "run", true, 0);
+    }
+
+    public void jump() {
+        state.addAnimation(0, "jump", true, 0);
+    }
+
+    public void idle() {
+        state.addAnimation(0, "idle", true, 0);
+    }
+
+    public void shoot() {
+        state.addAnimation(0, "shoot", true, 0);
+    }
+
+    public void hit() {
+        state.addAnimation(0, "hit", true, 0);
+    }
+
+    public void death() {
+        state.addAnimation(0, "hit", true, 0);
     }
 
     public void zoomBig() {

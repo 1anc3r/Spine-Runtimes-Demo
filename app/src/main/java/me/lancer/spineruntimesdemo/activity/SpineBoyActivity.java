@@ -70,7 +70,7 @@ public class SpineBoyActivity extends AppActivity {
         layoutParams.type = WindowManager.LayoutParams.TYPE_TOAST;
         layoutParams.flags = 40;
         layoutParams.width = dp2Px(144);
-        layoutParams.height = dp2Px(144);
+        layoutParams.height = dp2Px(200);
         layoutParams.format = -3;
         windowManager.addView(spineBoyView, layoutParams);
     }

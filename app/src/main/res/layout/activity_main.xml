@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context="me.lancer.spineruntimesdemo.MainActivity">
 
@@ -10,36 +11,54 @@
         android:id="@+id/btn_spine_boy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="SpineBoy"/>
 
     <Button
         android:id="@+id/btn_speedy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Speedy"/>
 
     <Button
         android:id="@+id/btn_goblin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Goblin"/>
 
     <Button
         android:id="@+id/btn_alien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Alien"/>
 
     <Button
         android:id="@+id/btn_bone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Bone"/>
 
     <Button
         android:id="@+id/btn_dragon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
         android:text="Dragon"/>
 
 </LinearLayout>

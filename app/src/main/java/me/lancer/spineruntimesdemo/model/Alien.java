@@ -85,10 +85,8 @@ public class Alien extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "run", false, 0); // Jump after 2 seconds.
-        state.addAnimation(0, "jump", false, 0);
-        state.addAnimation(0, "hit", false, 0);
-        state.addAnimation(0, "death", false, 0);
+        state.addAnimation(0, "run", true, 0); // Jump after 2 seconds.
+        state.addAnimation(0, "jump", true, 0);
         state.addAnimation(0, "run", true, 0); // Run after the jump.
     }
 
