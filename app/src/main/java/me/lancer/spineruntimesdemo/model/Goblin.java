@@ -14,6 +14,8 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
+import me.lancer.spineruntimesdemo.util.DensityUtil;
+
 public class Goblin extends ApplicationAdapter {
 
     OrthographicCamera camera;
@@ -35,12 +37,12 @@ public class Goblin extends ApplicationAdapter {
         debugRenderer.setRegionAttachments(false);
         atlas = new TextureAtlas(Gdx.files.internal("goblins.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(0.9f); // Load the skeleton at 60% the size it was in Spine.
+        json.setScale(1.1f); // Load the skeleton at 60% the size it was in Spine.
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("goblins.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
         skeleton.setSkin("goblin");
-        skeleton.setPosition(250, 100);
+        skeleton.setPosition(175, 0);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
         stateData.setMix("walk", "walk", 0.2f);

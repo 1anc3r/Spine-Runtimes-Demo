@@ -39,7 +39,7 @@ public class Alien extends ApplicationAdapter {
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("alien.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(250, 100);
+        skeleton.setPosition(175, 50);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
         stateData.setMix("run", "jump", 0.2f);

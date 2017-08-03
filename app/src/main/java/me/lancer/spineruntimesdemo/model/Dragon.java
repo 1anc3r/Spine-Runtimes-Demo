@@ -39,7 +39,7 @@ public class Dragon extends ApplicationAdapter {
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("dragon.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(215, 175);
+        skeleton.setPosition(225, 175);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
         stateData.setMix("flying", "flying", 0.2f);

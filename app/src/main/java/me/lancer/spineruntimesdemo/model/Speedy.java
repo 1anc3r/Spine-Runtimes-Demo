@@ -39,7 +39,7 @@ public class Speedy extends ApplicationAdapter {
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("speedy.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(200, 0);
+        skeleton.setPosition(175, 0);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
         stateData.setMix("run", "run", 0.2f);
