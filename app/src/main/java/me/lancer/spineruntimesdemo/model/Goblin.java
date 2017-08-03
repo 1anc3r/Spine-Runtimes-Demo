@@ -35,10 +35,10 @@ public class Goblin extends ApplicationAdapter {
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("goblins.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("goblins/goblins.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
         json.setScale(1.1f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("goblins.json"));
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("goblins/goblins.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
         skeleton.setSkin("goblin");

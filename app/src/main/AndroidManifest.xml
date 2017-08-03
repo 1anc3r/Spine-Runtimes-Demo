@@ -20,6 +20,9 @@
             android:name=".activity.SpineBoyActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
+            android:name=".activity.SpineBoyHoverActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".activity.SpeedyActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity

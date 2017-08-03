@@ -12,6 +12,7 @@ import me.lancer.spineruntimesdemo.activity.DragonActivity;
 import me.lancer.spineruntimesdemo.activity.GoblinActivity;
 import me.lancer.spineruntimesdemo.activity.SpeedyActivity;
 import me.lancer.spineruntimesdemo.activity.SpineBoyActivity;
+import me.lancer.spineruntimesdemo.activity.SpineBoyHoverActivity;
 
 public class MainActivity extends AppCompatActivity {
 

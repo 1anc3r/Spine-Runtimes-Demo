@@ -14,7 +14,7 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
-public class Speedy extends ApplicationAdapter {
+public class SpineBoyHover extends ApplicationAdapter {
 
     OrthographicCamera camera;
     SpriteBatch batch;
@@ -29,28 +29,28 @@ public class Speedy extends ApplicationAdapter {
         camera = new OrthographicCamera();
         batch = new SpriteBatch();
         renderer = new SkeletonRenderer();
-        renderer.setPremultipliedAlpha(false); // PMA results in correct blending without outlines.
+        renderer.setPremultipliedAlpha(true); // PMA results in correct blending without outlines.
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("speedy/speedy.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("spineboy/spineboy-hover.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(0.7f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("speedy/speedy.json"));
+        json.setScale(0.4f); // Load the skeleton at 60% the size it was in Spine.
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("spineboy/spineboy-hover.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(175, 0);
+        skeleton.setPosition(200, 0);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("run", "run", 0.2f);
+        stateData.setMix("fly", "fly", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
         state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
-        state.setAnimation(0, "run", true);
+        state.setAnimation(0, "fly", true);
 
-        state.addAnimation(0, "run", true, 0); // Run after the jump.
+        state.addAnimation(0, "fly", true, 0); // Run after the jump.
     }
 
     public void render() {
@@ -84,21 +84,7 @@ public class Speedy extends ApplicationAdapter {
     }
 
     public void animate() {
-        run();
-        runlinear();
-        runrough();
-    }
-
-    public void run() {
-        state.addAnimation(0, "run", true, 0);
-    }
-
-    public void runlinear() {
-        state.addAnimation(0, "run-linear", true, 0);
-    }
-
-    public void runrough() {
-        state.addAnimation(0, "run-rough", true, 0);
+        state.addAnimation(0, "fly", true, 0); // Run after the jump.
     }
 
     public void zoomBig() {

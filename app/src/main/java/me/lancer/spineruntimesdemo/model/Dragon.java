@@ -33,10 +33,10 @@ public class Dragon extends ApplicationAdapter {
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("dragon.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("dragon/dragon.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
         json.setScale(0.6f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("dragon.json"));
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("dragon/dragon.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
         skeleton.setPosition(225, 175);
