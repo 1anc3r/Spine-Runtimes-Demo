@@ -34,10 +34,10 @@ public class Raptor extends ApplicationAdapter {
         debugRenderer.setRegionAttachments(false);
         debugRenderer.setMeshHull(false);
 
-        atlas = new TextureAtlas(Gdx.files.internal("raptor-pma.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("raptor.atlas"));
         SkeletonJson json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
         json.setScale(0.5f); // Load the skeleton at 50% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("raptor-pro.json"));
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("raptor.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
         skeleton.setPosition(250, 20);
