@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
@@ -20,10 +21,18 @@ public class GoblinActivity extends AppActivity {
     Goblin goblin;
     View goblinView;
 
+    Button btnMan, btnWoman;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blank);
+        setContentView(R.layout.activity_goblin);
+
+        btnMan = (Button) findViewById(R.id.btn_man);
+        btnMan.setOnClickListener(vOnClickListener);
+
+        btnWoman = (Button) findViewById(R.id.btn_woman);
+        btnWoman.setOnClickListener(vOnClickListener);
 
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.r = cfg.g = cfg.b = cfg.a = 8;
@@ -77,6 +86,17 @@ public class GoblinActivity extends AppActivity {
         final float scale = getResources().getDisplayMetrics().density;
         return (int) (value * scale + 0.5f);
     }
+
+    View.OnClickListener vOnClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (view == btnMan) {
+                goblin.man();
+            } else if (view == btnWoman) {
+                goblin.woman();
+            }
+        }
+    };
 
     @Override
     protected void onDestroy() {

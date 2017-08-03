@@ -42,7 +42,7 @@ public class SpineBoy extends ApplicationAdapter {
         skeleton.setPosition(200, 0);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("run", "run", 0.2f);
+        stateData.setMix("run", "jump", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
         state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
@@ -84,9 +84,12 @@ public class SpineBoy extends ApplicationAdapter {
     }
 
     public void animate() {
-        run();
         jump();
-        run();
+        state.addAnimation(0, "run", true, 0); // Run after the jump.
+    }
+
+    public void walk() {
+        state.addAnimation(0, "walk", true, 0);
     }
 
     public void run() {
@@ -110,7 +113,7 @@ public class SpineBoy extends ApplicationAdapter {
     }
 
     public void death() {
-        state.addAnimation(0, "hit", true, 0);
+        state.addAnimation(0, "death", true, 0);
     }
 
     public void zoomBig() {

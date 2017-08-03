@@ -90,6 +90,14 @@ public class Goblin extends ApplicationAdapter {
         state.addAnimation(0, "walk", true, 0); // Jump after 2 seconds.
     }
 
+    public void man() {
+        skeleton.setSkin("goblin");
+    }
+
+    public void woman() {
+        skeleton.setSkin("goblingirl");
+    }
+
     public void zoomBig() {
         camera.zoom = 0.5f;
     }
