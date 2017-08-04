@@ -1,75 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:gravity="center"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_walk"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="WALK"
-        android:textColor="@android:color/white" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_run"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="RUN"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_walk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="WALK"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_jump"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="JUMP"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_run"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="RUN"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_idle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="IDLE"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_jump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="JUMP"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_shoot"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="SHOOT"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_idle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="IDLE"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_hit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="HIT"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_shoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="SHOOT"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_death"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_green_light"
-        android:text="DEATH"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="HIT"
+            android:textColor="@android:color/white" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_death"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_green_light"
+            android:text="DEATH"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

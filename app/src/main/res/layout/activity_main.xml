@@ -1,65 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context="me.lancer.spineruntimesdemo.MainActivity">
 
-    <Button
-        android:id="@+id/btn_spine_boy"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_margin="16dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="SpineBoy"
-        android:textColor="@android:color/white" />
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_speedy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Speedy"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_spine_boy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="SpineBoy"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_goblin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Goblin"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_speedy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Speedy"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_alien"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Alien"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_goblin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Goblin"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_bone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Bone"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_alien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Alien"
+            android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_dragon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:background="@android:color/holo_blue_light"
-        android:text="Dragon"
-        android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_bone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Bone"
+            android:textColor="@android:color/white" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_dragon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Dragon"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
