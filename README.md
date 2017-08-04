@@ -3,9 +3,13 @@
 
 下载链接:http://fir.im/spineruntimes
 
-## Spine 是什么？
+## Spine Runtimes 是什么？
 
 动画能给游戏带来生机和灵气。我们相信创作一段美妙的动画，不仅需要强大的软件工具，更需要一套牛B的工作流程。Spine专注于此，为您创建惊艳的骨骼动画，并将其整合到游戏当中，提供了一套高效的工作流程。
+
+# 应用简介
+
+使用(Spine Runtimes)[https://github.com/EsotericSoftware/spine-runtimes]中的spine-libgdx
 
 ## 运行效果:
 
