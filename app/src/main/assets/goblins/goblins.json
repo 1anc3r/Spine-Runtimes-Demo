@@ -1,10 +1,4 @@
 {
-  "skeleton": {
-    "hash": "BMzsp4a1APif5tjCQwomTTo3Ino",
-    "spine": "2.1.05",
-    "width": 233.95,
-    "height": 354.87
-  },
   "bones": [
     {
       "name": "root"
