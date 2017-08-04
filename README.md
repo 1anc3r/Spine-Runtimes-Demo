@@ -9,7 +9,7 @@
 
 # 应用简介
 
-使用(Spine Runtimes)[https://github.com/EsotericSoftware/spine-runtimes]中的spine-libgdx
+使用(https://github.com/EsotericSoftware/spine-runtimes)[Spine Runtimes]中的spine-libgdx
 
 ## 运行效果:
 
