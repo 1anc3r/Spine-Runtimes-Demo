@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -17,63 +17,63 @@
             android:id="@+id/btn_walk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="WALK"
+            android:text="Walk"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_run"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="RUN"
+            android:text="Run"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_jump"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="JUMP"
+            android:text="Jump"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_idle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="IDLE"
+            android:text="Idle"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_shoot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="SHOOT"
+            android:text="Shoot"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_hit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="HIT"
+            android:text="Hit"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_death"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_green_light"
-            android:text="DEATH"
+            android:text="Death"
             android:textColor="@android:color/white" />
 
     </LinearLayout>

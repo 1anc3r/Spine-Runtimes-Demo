@@ -4,7 +4,6 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.g2d.PolygonSpriteBatch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.esotericsoftware.spine.AnimationState;
@@ -15,10 +14,10 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
-public class Hero extends ApplicationAdapter {
+public class HumanOid extends ApplicationAdapter {
 
     OrthographicCamera camera;
-    PolygonSpriteBatch batch;
+    SpriteBatch batch;
     SkeletonRenderer renderer;
     SkeletonRendererDebug debugRenderer;
     TextureAtlas atlas;
@@ -28,31 +27,41 @@ public class Hero extends ApplicationAdapter {
 
     public void create() {
         camera = new OrthographicCamera();
-        batch = new PolygonSpriteBatch();
+        batch = new SpriteBatch();
         renderer = new SkeletonRenderer();
         renderer.setPremultipliedAlpha(false); // PMA results in correct blending without outlines.
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("hero/hero.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("humanoid/humanoid.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
         json.setScale(0.5f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("hero/hero.json"));
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("humanoid/humanoid.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(250, 100);
+        skeleton.setSkin("elf");
+        skeleton.setAttachment("back shoes", "humanoid_boots_brown");
+        skeleton.setAttachment("front shoes", "humanoid_boots_brown");
+        skeleton.setAttachment("back shoulder", "humanoid_shoulder_brown");
+        skeleton.setAttachment("front shoulder", "humanoid_shoulder_brown");
+        skeleton.setAttachment("back weapon", "humanoid_weapon_bow");
+        skeleton.setAttachment("belt weapon", "humanoid_weapon_knife");
+        skeleton.setAttachment("body", "humanoid_armor_f_brown");
+        skeleton.setAttachment("eyebrows", "humanoid_eyebrows_angry");
+        skeleton.setAttachment("facial hair", "humanoid_beard_3_brown");
+        skeleton.setAttachment("hair", "humanoid_hair_m_1_brown");
+        skeleton.setPosition(175, 50);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("walk", "run", 0.2f);
-        stateData.setMix("run", "walk", 0.2f);
+        stateData.setMix("run", "run", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
         state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
-        state.setAnimation(0, "walk", true);
+        state.setAnimation(0, "run", true);
 
-        state.addAnimation(0, "walk", true, 0); // Run after the jump.
+        state.addAnimation(0, "run", true, 0); // Run after the jump.
     }
 
     public void render() {
@@ -86,14 +95,22 @@ public class Hero extends ApplicationAdapter {
     }
 
     public void animate() {
-        state.addAnimation(0, "run", false, 0); // Jump after 2 seconds.
-        state.addAnimation(0, "jump", false, 0);
-        state.addAnimation(0, "idle", false, 0);
-        state.addAnimation(0, "head-turn", false, 0);
-        state.addAnimation(0, "attack", false, 0);
-        state.addAnimation(0, "crouch", false, 0);
-        state.addAnimation(0, "fall", false, 0);
-        state.addAnimation(0, "walk", true, 0); // Run after the jump.
+        state.addAnimation(0, "run", true, 0); // Jump after 2 seconds.
+        state.addAnimation(0, "draw bow", true, 0);
+        state.addAnimation(0, "attack   1", true, 0);
+        state.addAnimation(0, "run", true, 0); // Run after the jump.
+    }
+
+    public void setSkin(String skin) {
+        skeleton.setSkin(skin);
+    }
+
+    public void setAttachment(String slot, String attachment) {
+        skeleton.setAttachment(slot, attachment);
+    }
+
+    public void setAnimate(String animate) {
+        state.addAnimation(0, animate, true, 0);
     }
 
     public void zoomBig() {

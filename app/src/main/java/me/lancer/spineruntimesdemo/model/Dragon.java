@@ -83,8 +83,8 @@ public class Dragon extends ApplicationAdapter {
         atlas.dispose();
     }
 
-    public void animate() {
-        state.addAnimation(0, "flying", true, 0);
+    public void setAnimate(String animate) {
+        state.addAnimation(0, animate, true, 0);
     }
 
     public void zoomBig() {

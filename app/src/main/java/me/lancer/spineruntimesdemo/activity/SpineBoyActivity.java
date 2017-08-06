@@ -1,9 +1,7 @@
 package me.lancer.spineruntimesdemo.activity;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.PixelFormat;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
@@ -14,7 +12,6 @@ import android.widget.Button;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
 
-import me.lancer.spineruntimesdemo.MainActivity;
 import me.lancer.spineruntimesdemo.R;
 import me.lancer.spineruntimesdemo.model.SpineBoy;
 
@@ -86,7 +83,7 @@ public class SpineBoyActivity extends AppActivity {
                     lastX = x;
                     lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    spineBoy.animate();
+                    spineBoy.setAnimate();
                 }
                 return true;
             }
@@ -108,19 +105,19 @@ public class SpineBoyActivity extends AppActivity {
         @Override
         public void onClick(View view) {
             if (view == btnWalk) {
-                spineBoy.walk();
+                spineBoy.setAnimate("walk");
             } else if (view == btnRun) {
-                spineBoy.run();
+                spineBoy.setAnimate("run");
             } else if (view == btnJump) {
-                spineBoy.jump();
+                spineBoy.setAnimate("jump");
             } else if (view == btnIdle) {
-                spineBoy.idle();
+                spineBoy.setAnimate("idle");
             } else if (view == btnShoot) {
-                spineBoy.shoot();
+                spineBoy.setAnimate("shoot");
             } else if (view == btnHit) {
-                spineBoy.hit();
+                spineBoy.setAnimate("hit");
             } else if (view == btnDeath) {
-                spineBoy.death();
+                spineBoy.setAnimate("death");
             }
         }
     };

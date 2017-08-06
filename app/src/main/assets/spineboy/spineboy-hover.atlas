@@ -1,215 +1,215 @@
 
 spineboy-hover.png
-size: 1024,1024
+size: 2048,512
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 eye_indifferent
   rotate: true
-  xy: 648, 629
+  xy: 1382, 324
   size: 93, 89
   orig: 93, 89
   offset: 0, 0
   index: -1
 eye_surprised
-  rotate: true
-  xy: 233, 179
+  rotate: false
+  xy: 934, 207
   size: 93, 89
   orig: 93, 89
   offset: 0, 0
   index: -1
 front_bracer
-  rotate: false
-  xy: 245, 2
+  rotate: true
+  xy: 1022, 122
   size: 58, 80
   orig: 58, 80
   offset: 0, 0
   index: -1
 front_fist_closed
   rotate: false
-  xy: 168, 45
+  xy: 861, 2
   size: 75, 82
   orig: 75, 82
   offset: 0, 0
   index: -1
 front_fist_open
   rotate: false
-  xy: 844, 646
+  xy: 934, 118
   size: 86, 87
   orig: 86, 87
   offset: 0, 0
   index: -1
 front_foot
-  rotate: true
-  xy: 310, 326
+  rotate: false
+  xy: 1588, 432
   size: 126, 69
   orig: 126, 69
   offset: 0, 0
   index: -1
 front_foot_bend1
-  rotate: true
-  xy: 951, 894
+  rotate: false
+  xy: 1458, 431
   size: 128, 70
   orig: 128, 70
   offset: 0, 0
   index: -1
 front_foot_bend2
   rotate: false
-  xy: 2, 33
+  xy: 1272, 324
   size: 108, 93
   orig: 108, 93
   offset: 0, 0
   index: -1
 front_shin
   rotate: true
-  xy: 739, 735
+  xy: 1272, 419
   size: 82, 184
   orig: 82, 184
   offset: 0, 0
   index: -1
 front_thigh
-  rotate: false
-  xy: 381, 340
+  rotate: true
+  xy: 458, 26
   size: 48, 112
   orig: 48, 112
   offset: 0, 0
   index: -1
 front_upper_arm
-  rotate: false
-  xy: 112, 29
+  rotate: true
+  xy: 572, 20
   size: 54, 97
   orig: 54, 97
   offset: 0, 0
   index: -1
 goggles
-  rotate: false
-  xy: 156, 454
+  rotate: true
+  xy: 766, 86
   size: 261, 166
   orig: 261, 166
   offset: 0, 0
   index: -1
 gun
   rotate: false
-  xy: 739, 819
+  xy: 960, 298
   size: 210, 203
   orig: 210, 203
   offset: 0, 0
   index: -1
 head
-  rotate: false
-  xy: 466, 724
+  rotate: true
+  xy: 466, 76
   size: 271, 298
   orig: 271, 298
   offset: 0, 0
   index: -1
 hoverboard_board
-  rotate: true
-  xy: 2, 128
+  rotate: false
+  xy: 466, 349
   size: 492, 152
   orig: 492, 152
   offset: 0, 0
   index: -1
 hoverboard_thruster
   rotate: false
-  xy: 602, 558
+  xy: 1193, 255
   size: 60, 64
   orig: 60, 64
   offset: 0, 0
   index: -1
 hoverglow_small
-  rotate: true
-  xy: 156, 178
+  rotate: false
+  xy: 2, 24
   size: 274, 75
   orig: 274, 75
   offset: 0, 0
   index: -1
 mouth_grind
-  rotate: true
-  xy: 951, 799
+  rotate: false
+  xy: 1950, 442
   size: 93, 59
   orig: 93, 59
   offset: 0, 0
   index: -1
 mouth_oooo
-  rotate: true
-  xy: 245, 84
+  rotate: false
+  xy: 671, 15
   size: 93, 59
   orig: 93, 59
   offset: 0, 0
   index: -1
 mouth_smile
   rotate: false
-  xy: 925, 738
+  xy: 766, 25
   size: 93, 59
   orig: 93, 59
   offset: 0, 0
   index: -1
 muzzle
   rotate: false
-  xy: 2, 622
+  xy: 2, 101
   size: 462, 400
   orig: 462, 400
   offset: 0, 0
   index: -1
 neck
-  rotate: false
-  xy: 168, 2
+  rotate: true
+  xy: 1193, 217
   size: 36, 41
   orig: 36, 41
   offset: 0, 0
   index: -1
 rear_bracer
   rotate: false
-  xy: 932, 664
+  xy: 1135, 224
   size: 56, 72
   orig: 56, 72
   offset: 0, 0
   index: -1
 rear_foot
   rotate: false
-  xy: 487, 562
+  xy: 1835, 441
   size: 113, 60
   orig: 113, 60
   offset: 0, 0
   index: -1
 rear_foot_bend1
-  rotate: true
-  xy: 419, 503
+  rotate: false
+  xy: 1716, 435
   size: 117, 66
   orig: 117, 66
   offset: 0, 0
   index: -1
 rear_foot_bend2
   rotate: false
-  xy: 739, 650
+  xy: 1473, 346
   size: 103, 83
   orig: 103, 83
   offset: 0, 0
   index: -1
 rear_shin
-  rotate: false
-  xy: 233, 274
+  rotate: true
+  xy: 278, 24
   size: 75, 178
   orig: 75, 178
   offset: 0, 0
   index: -1
 rear_thigh
   rotate: true
-  xy: 487, 495
+  xy: 1029, 231
   size: 65, 104
   orig: 65, 104
   offset: 0, 0
   index: -1
 rear_upper_arm
   rotate: true
-  xy: 156, 129
+  xy: 1029, 182
   size: 47, 87
   orig: 47, 87
   offset: 0, 0
   index: -1
 torso
-  rotate: true
-  xy: 466, 624
+  rotate: false
+  xy: 1172, 321
   size: 98, 180
   orig: 98, 180
   offset: 0, 0

@@ -60,7 +60,7 @@ public class SpeedyActivity extends AppActivity {
                     lastX = x;
                     lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    speedy.animate();
+                    speedy.setAnimate();
                 }
                 return true;
             }

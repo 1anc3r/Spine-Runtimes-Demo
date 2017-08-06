@@ -4,7 +4,7 @@
     android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="8dp"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -12,18 +12,18 @@
         android:id="@+id/btn_man"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:background="@android:color/holo_green_light"
-        android:text="MAN"
+        android:text="Man"
         android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_woman"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:background="@android:color/holo_green_light"
-        android:text="WOMAN"
+        android:text="Woman"
         android:textColor="@android:color/white" />
 
 </LinearLayout>

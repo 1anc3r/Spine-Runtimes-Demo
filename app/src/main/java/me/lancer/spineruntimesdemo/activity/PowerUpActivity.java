@@ -2,7 +2,6 @@ package me.lancer.spineruntimesdemo.activity;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
@@ -13,12 +12,12 @@ import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
 
 import me.lancer.spineruntimesdemo.R;
-import me.lancer.spineruntimesdemo.model.Tank;
+import me.lancer.spineruntimesdemo.model.PowerUp;
 
-public class TankActivity extends AppActivity {
+public class PowerUpActivity extends AppActivity {
 
-    Tank tank;
-    View tankView;
+    PowerUp powerUp;
+    View powerUpView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,22 +26,22 @@ public class TankActivity extends AppActivity {
 
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.r = cfg.g = cfg.b = cfg.a = 8;
-        tank = new Tank();
-        tankView = initializeForView(tank, cfg);
-        if (tankView instanceof SurfaceView) {
-            SurfaceView glView = (SurfaceView) tankView;
+        powerUp = new PowerUp();
+        powerUpView = initializeForView(powerUp, cfg);
+        if (powerUpView instanceof SurfaceView) {
+            SurfaceView glView = (SurfaceView) powerUpView;
             glView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
             glView.setZOrderOnTop(true);
         }
-        addTank();
+        addAlien();
     }
 
-    public void addTank() {
+    public void addAlien() {
         final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
 
-        tankView.setOnTouchListener(new View.OnTouchListener() {
+        powerUpView.setOnTouchListener(new View.OnTouchListener() {
 
             float lastX, lastY;
 
@@ -56,11 +55,11 @@ public class TankActivity extends AppActivity {
                 } else if (action == MotionEvent.ACTION_MOVE) {
                     layoutParams.x += (int) (x - lastX);
                     layoutParams.y += (int) (y - lastY);
-                    windowManager.updateViewLayout(tankView, layoutParams);
+                    windowManager.updateViewLayout(powerUpView, layoutParams);
                     lastX = x;
                     lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    tank.animate();
+                    powerUp.setAnimate("animation");
                 }
                 return true;
             }
@@ -70,7 +69,7 @@ public class TankActivity extends AppActivity {
         layoutParams.width = dp2Px(144);
         layoutParams.height = dp2Px(144);
         layoutParams.format = -3;
-        windowManager.addView(tankView, layoutParams);
+        windowManager.addView(powerUpView, layoutParams);
     }
 
     public int dp2Px(float value) {
@@ -80,7 +79,7 @@ public class TankActivity extends AppActivity {
 
     @Override
     protected void onDestroy() {
-        getWindowManager().removeView(tankView);
+        getWindowManager().removeView(powerUpView);
         super.onDestroy();
     }
 }

@@ -84,10 +84,13 @@ public class Alien extends ApplicationAdapter {
         atlas.dispose();
     }
 
-    public void animate() {
-        state.addAnimation(0, "run", true, 0); // Jump after 2 seconds.
-        state.addAnimation(0, "jump", true, 0);
-        state.addAnimation(0, "run", true, 0); // Run after the jump.
+    public void setAnimate() {
+        setAnimate("jump");
+        setAnimate("run");
+    }
+
+    public void setAnimate(String animate) {
+        state.addAnimation(0, animate, true, 0);
     }
 
     public void zoomBig() {

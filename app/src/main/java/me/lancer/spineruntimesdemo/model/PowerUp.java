@@ -14,7 +14,7 @@ import com.esotericsoftware.spine.SkeletonJson;
 import com.esotericsoftware.spine.SkeletonRenderer;
 import com.esotericsoftware.spine.SkeletonRendererDebug;
 
-public class SpineBoyHover extends ApplicationAdapter {
+public class PowerUp extends ApplicationAdapter {
 
     OrthographicCamera camera;
     SpriteBatch batch;
@@ -33,24 +33,24 @@ public class SpineBoyHover extends ApplicationAdapter {
         debugRenderer = new SkeletonRendererDebug();
         debugRenderer.setBoundingBoxes(false);
         debugRenderer.setRegionAttachments(false);
-        atlas = new TextureAtlas(Gdx.files.internal("spineboy/spineboy-hover.atlas"));
+        atlas = new TextureAtlas(Gdx.files.internal("powerup/powerup.atlas"));
         json = new SkeletonJson(atlas); // This loads skeleton JSON data, which is stateless.
-        json.setScale(0.4f); // Load the skeleton at 60% the size it was in Spine.
-        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("spineboy/spineboy-hover.json"));
+        json.setScale(0.8f); // Load the skeleton at 60% the size it was in Spine.
+        SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal("powerup/powerup.json"));
 
         skeleton = new Skeleton(skeletonData); // Skeleton holds skeleton state (bone positions, slot attachments, etc).
-        skeleton.setPosition(200, 0);
+        skeleton.setPosition(200, 50);
 
         AnimationStateData stateData = new AnimationStateData(skeletonData); // Defines mixing (crossfading) between animations.
-        stateData.setMix("fly", "fly", 0.2f);
+        stateData.setMix("animation", "animation", 0.2f);
 
         state = new AnimationState(stateData); // Holds the animation state for a skeleton (current animation, time, etc).
         state.setTimeScale(1.0f); // Slow all animations down to 50% speed.
 
         // Queue animations on track 0.
-        state.setAnimation(0, "fly", true);
+        state.setAnimation(0, "animation", true);
 
-        state.addAnimation(0, "fly", true, 0); // Run after the jump.
+        state.addAnimation(0, "animation", true, 0); // Run after the jump.
     }
 
     public void render() {
@@ -83,8 +83,8 @@ public class SpineBoyHover extends ApplicationAdapter {
         atlas.dispose();
     }
 
-    public void animate() {
-        state.addAnimation(0, "fly", true, 0); // Run after the jump.
+    public void setAnimate(String animate) {
+        state.addAnimation(0, animate, true, 0);
     }
 
     public void zoomBig() {

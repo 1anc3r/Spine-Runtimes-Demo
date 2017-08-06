@@ -2,7 +2,6 @@ package me.lancer.spineruntimesdemo.activity;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
@@ -69,7 +68,7 @@ public class GoblinActivity extends AppActivity {
                     lastX = x;
                     lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    goblin.animate();
+                    goblin.setAnimate("walk");
                 }
                 return true;
             }
@@ -91,9 +90,9 @@ public class GoblinActivity extends AppActivity {
         @Override
         public void onClick(View view) {
             if (view == btnMan) {
-                goblin.man();
+                goblin.setSkin("goblin");
             } else if (view == btnWoman) {
-                goblin.woman();
+                goblin.setSkin("goblingirl");
             }
         }
     };

@@ -1,0 +1,1132 @@
+
+humanoid.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+humanoid_armor_f_black
+  rotate: false
+  xy: 445, 59
+  size: 129, 126
+  orig: 129, 126
+  offset: 0, 0
+  index: -1
+humanoid_armor_f_brown
+  rotate: false
+  xy: 647, 882
+  size: 129, 126
+  orig: 129, 126
+  offset: 0, 0
+  index: -1
+humanoid_armor_f_gold
+  rotate: false
+  xy: 1426, 1097
+  size: 129, 126
+  orig: 129, 126
+  offset: 0, 0
+  index: -1
+humanoid_armor_f_grey
+  rotate: false
+  xy: 1557, 1097
+  size: 129, 126
+  orig: 129, 126
+  offset: 0, 0
+  index: -1
+humanoid_armor_f_red
+  rotate: false
+  xy: 1427, 969
+  size: 129, 126
+  orig: 129, 126
+  offset: 0, 0
+  index: -1
+humanoid_armor_f_white
+  rotate: false
+  xy: 1558, 969
+  size: 129, 126
+  orig: 129, 126
+  offset: 0, 0
+  index: -1
+humanoid_armor_m_black
+  rotate: true
+  xy: 3829, 1015
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_armor_m_brown
+  rotate: false
+  xy: 1247, 1206
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_armor_m_gold
+  rotate: true
+  xy: 1307, 1073
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_armor_m_grey
+  rotate: true
+  xy: 1308, 940
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_armor_m_red
+  rotate: false
+  xy: 2828, 1073
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_armor_m_white
+  rotate: true
+  xy: 3028, 1037
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_body_skeleton
+  rotate: true
+  xy: 3028, 1037
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_beard_1_black
+  rotate: false
+  xy: 3728, 1425
+  size: 170, 139
+  orig: 170, 139
+  offset: 0, 0
+  index: -1
+humanoid_beard_1_blonde
+  rotate: true
+  xy: 3955, 1264
+  size: 170, 139
+  orig: 170, 139
+  offset: 0, 0
+  index: -1
+humanoid_beard_1_brown
+  rotate: true
+  xy: 3955, 1092
+  size: 170, 139
+  orig: 170, 139
+  offset: 0, 0
+  index: -1
+humanoid_beard_1_red
+  rotate: false
+  xy: 3485, 1051
+  size: 170, 139
+  orig: 170, 139
+  offset: 0, 0
+  index: -1
+humanoid_beard_1_white
+  rotate: false
+  xy: 3657, 1012
+  size: 170, 139
+  orig: 170, 139
+  offset: 0, 0
+  index: -1
+humanoid_beard_2_black
+  rotate: true
+  xy: 537, 902
+  size: 212, 108
+  orig: 212, 108
+  offset: 0, 0
+  index: -1
+humanoid_beard_2_blonde
+  rotate: false
+  xy: 2333, 1141
+  size: 212, 108
+  orig: 212, 108
+  offset: 0, 0
+  index: -1
+humanoid_beard_2_brown
+  rotate: false
+  xy: 2547, 1130
+  size: 212, 108
+  orig: 212, 108
+  offset: 0, 0
+  index: -1
+humanoid_beard_2_red
+  rotate: false
+  xy: 1020, 1206
+  size: 212, 108
+  orig: 212, 108
+  offset: 0, 0
+  index: -1
+humanoid_beard_2_white
+  rotate: true
+  xy: 3037, 1170
+  size: 212, 108
+  orig: 212, 108
+  offset: 0, 0
+  index: -1
+humanoid_beard_3_black
+  rotate: true
+  xy: 445, 187
+  size: 204, 100
+  orig: 204, 100
+  offset: 0, 0
+  index: -1
+humanoid_beard_3_blonde
+  rotate: false
+  xy: 3110, 1464
+  size: 204, 100
+  orig: 204, 100
+  offset: 0, 0
+  index: -1
+humanoid_beard_3_brown
+  rotate: false
+  xy: 3316, 1464
+  size: 204, 100
+  orig: 204, 100
+  offset: 0, 0
+  index: -1
+humanoid_beard_3_red
+  rotate: false
+  xy: 3522, 1464
+  size: 204, 100
+  orig: 204, 100
+  offset: 0, 0
+  index: -1
+humanoid_beard_3_white
+  rotate: false
+  xy: 3147, 1165
+  size: 204, 100
+  orig: 204, 100
+  offset: 0, 0
+  index: -1
+humanoid_body_goblin
+  rotate: false
+  xy: 1043, 812
+  size: 131, 117
+  orig: 131, 117
+  offset: 0, 0
+  index: -1
+humanoid_boots_black
+  rotate: false
+  xy: 2, 3
+  size: 129, 81
+  orig: 129, 81
+  offset: 0, 0
+  index: -1
+humanoid_boots_brown
+  rotate: false
+  xy: 1435, 886
+  size: 129, 81
+  orig: 129, 81
+  offset: 0, 0
+  index: -1
+humanoid_clothes_f_blue
+  rotate: true
+  xy: 3353, 1145
+  size: 125, 130
+  orig: 125, 130
+  offset: 0, 0
+  index: -1
+humanoid_clothes_f_brown
+  rotate: true
+  xy: 3147, 1038
+  size: 125, 130
+  orig: 125, 130
+  offset: 0, 0
+  index: -1
+humanoid_clothes_f_green
+  rotate: true
+  xy: 1176, 809
+  size: 125, 130
+  orig: 125, 130
+  offset: 0, 0
+  index: -1
+humanoid_clothes_f_red
+  rotate: false
+  xy: 1308, 808
+  size: 125, 130
+  orig: 125, 130
+  offset: 0, 0
+  index: -1
+humanoid_clothes_m_blue
+  rotate: false
+  xy: 778, 879
+  size: 133, 133
+  orig: 133, 133
+  offset: 0, 0
+  index: -1
+humanoid_clothes_m_brown
+  rotate: false
+  xy: 1037, 1071
+  size: 133, 133
+  orig: 133, 133
+  offset: 0, 0
+  index: -1
+humanoid_clothes_m_green
+  rotate: false
+  xy: 1172, 1071
+  size: 133, 133
+  orig: 133, 133
+  offset: 0, 0
+  index: -1
+humanoid_clothes_m_red
+  rotate: false
+  xy: 1173, 936
+  size: 133, 133
+  orig: 133, 133
+  offset: 0, 0
+  index: -1
+humanoid_elfear_drow
+  rotate: true
+  xy: 1959, 1142
+  size: 51, 80
+  orig: 54, 82
+  offset: 0, 2
+  index: -1
+humanoid_elfear_elf
+  rotate: true
+  xy: 2041, 1142
+  size: 51, 80
+  orig: 54, 82
+  offset: 0, 2
+  index: -1
+humanoid_eyebrows_angry
+  rotate: false
+  xy: 3330, 1114
+  size: 145, 29
+  orig: 157, 29
+  offset: 6, 0
+  index: -1
+humanoid_eyebrows_sad
+  rotate: false
+  xy: 3330, 1083
+  size: 145, 29
+  orig: 157, 29
+  offset: 6, 0
+  index: -1
+humanoid_eyes
+  rotate: false
+  xy: 2000, 1637
+  size: 76, 51
+  orig: 76, 51
+  offset: 0, 0
+  index: -1
+humanoid_eyes_closed
+  rotate: true
+  xy: 327, 1323
+  size: 86, 17
+  orig: 100, 17
+  offset: 7, 0
+  index: -1
+humanoid_eyes_dead
+  rotate: false
+  xy: 2234, 1163
+  size: 97, 51
+  orig: 99, 57
+  offset: 1, 3
+  index: -1
+humanoid_goblin_eyes
+  rotate: false
+  xy: 2000, 1584
+  size: 76, 51
+  orig: 76, 51
+  offset: 0, 0
+  index: -1
+humanoid_goblin_mouth_happy
+  rotate: false
+  xy: 1435, 783
+  size: 95, 50
+  orig: 107, 50
+  offset: 6, 0
+  index: -1
+humanoid_goblin_mouth_sad
+  rotate: false
+  xy: 1559, 815
+  size: 95, 50
+  orig: 107, 50
+  offset: 6, 0
+  index: -1
+humanoid_goblin_mouth_stoic
+  rotate: false
+  xy: 1864, 1147
+  size: 93, 46
+  orig: 107, 46
+  offset: 6, 0
+  index: -1
+humanoid_goblinear_goblin
+  rotate: true
+  xy: 2078, 1561
+  size: 52, 85
+  orig: 56, 86
+  offset: 0, 1
+  index: -1
+humanoid_hair_f_1_black
+  rotate: false
+  xy: 187, 74
+  size: 256, 246
+  orig: 256, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_1_blonde
+  rotate: false
+  xy: 2078, 1615
+  size: 256, 246
+  orig: 256, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_1_brown
+  rotate: false
+  xy: 2336, 1599
+  size: 256, 246
+  orig: 256, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_1_red
+  rotate: false
+  xy: 2594, 1552
+  size: 256, 246
+  orig: 256, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_1_white
+  rotate: false
+  xy: 2852, 1552
+  size: 256, 246
+  orig: 256, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_2_black
+  rotate: false
+  xy: 3110, 1566
+  size: 256, 232
+  orig: 256, 232
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_2_blonde
+  rotate: false
+  xy: 3368, 1566
+  size: 256, 232
+  orig: 256, 232
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_2_brown
+  rotate: false
+  xy: 3626, 1566
+  size: 256, 232
+  orig: 256, 232
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_2_red
+  rotate: false
+  xy: 369, 1518
+  size: 256, 232
+  orig: 256, 232
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_2_white
+  rotate: false
+  xy: 346, 1284
+  size: 256, 232
+  orig: 256, 232
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_3_black
+  rotate: true
+  xy: 2, 467
+  size: 379, 183
+  orig: 379, 183
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_3_blonde
+  rotate: false
+  xy: 1289, 1863
+  size: 379, 183
+  orig: 379, 183
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_3_brown
+  rotate: true
+  xy: 2, 86
+  size: 379, 183
+  orig: 379, 183
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_3_red
+  rotate: false
+  xy: 1670, 1863
+  size: 379, 183
+  orig: 379, 183
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_3_white
+  rotate: false
+  xy: 2051, 1863
+  size: 379, 183
+  orig: 379, 183
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_4_black
+  rotate: true
+  xy: 627, 1515
+  size: 235, 187
+  orig: 235, 187
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_4_blonde
+  rotate: true
+  xy: 816, 1521
+  size: 235, 187
+  orig: 235, 187
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_4_brown
+  rotate: true
+  xy: 831, 1284
+  size: 235, 187
+  orig: 235, 187
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_4_red
+  rotate: false
+  xy: 1474, 1363
+  size: 235, 187
+  orig: 235, 187
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_4_white
+  rotate: false
+  xy: 1711, 1363
+  size: 235, 187
+  orig: 235, 187
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_5_black
+  rotate: false
+  xy: 2728, 1800
+  size: 270, 246
+  orig: 270, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_5_blonde
+  rotate: false
+  xy: 3000, 1800
+  size: 270, 246
+  orig: 270, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_5_brown
+  rotate: false
+  xy: 3272, 1800
+  size: 270, 246
+  orig: 270, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_5_red
+  rotate: false
+  xy: 3544, 1800
+  size: 270, 246
+  orig: 270, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_f_5_white
+  rotate: false
+  xy: 3816, 1800
+  size: 270, 246
+  orig: 270, 246
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_1_black
+  rotate: false
+  xy: 327, 1116
+  size: 250, 166
+  orig: 250, 166
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_1_blonde
+  rotate: false
+  xy: 1730, 1195
+  size: 250, 166
+  orig: 250, 166
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_1_brown
+  rotate: true
+  xy: 2165, 1363
+  size: 250, 166
+  orig: 250, 166
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_1_red
+  rotate: false
+  xy: 1982, 1195
+  size: 250, 166
+  orig: 250, 166
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_1_white
+  rotate: false
+  xy: 2837, 1384
+  size: 250, 166
+  orig: 250, 166
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_2_black
+  rotate: true
+  xy: 360, 641
+  size: 246, 172
+  orig: 246, 172
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_2_blonde
+  rotate: true
+  xy: 360, 393
+  size: 246, 172
+  orig: 246, 172
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_2_brown
+  rotate: false
+  xy: 2333, 1425
+  size: 246, 172
+  orig: 246, 172
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_2_red
+  rotate: false
+  xy: 2333, 1251
+  size: 246, 172
+  orig: 246, 172
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_2_white
+  rotate: false
+  xy: 2581, 1240
+  size: 246, 172
+  orig: 246, 172
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_3_black
+  rotate: true
+  xy: 187, 585
+  size: 261, 171
+  orig: 261, 171
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_3_blonde
+  rotate: true
+  xy: 187, 322
+  size: 261, 171
+  orig: 261, 171
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_3_brown
+  rotate: false
+  xy: 1289, 1690
+  size: 261, 171
+  orig: 261, 171
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_3_red
+  rotate: false
+  xy: 1552, 1690
+  size: 261, 171
+  orig: 261, 171
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_3_white
+  rotate: false
+  xy: 1815, 1690
+  size: 261, 171
+  orig: 261, 171
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_4_black
+  rotate: false
+  xy: 3485, 1328
+  size: 189, 134
+  orig: 189, 134
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_4_blonde
+  rotate: false
+  xy: 3900, 1436
+  size: 189, 134
+  orig: 189, 134
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_4_brown
+  rotate: false
+  xy: 3485, 1192
+  size: 189, 134
+  orig: 189, 134
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_4_red
+  rotate: false
+  xy: 3676, 1289
+  size: 189, 134
+  orig: 189, 134
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_4_white
+  rotate: false
+  xy: 3676, 1153
+  size: 189, 134
+  orig: 189, 134
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_5_black
+  rotate: false
+  xy: 1232, 1552
+  size: 254, 136
+  orig: 254, 136
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_5_blonde
+  rotate: false
+  xy: 1488, 1552
+  size: 254, 136
+  orig: 254, 136
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_5_brown
+  rotate: false
+  xy: 1744, 1552
+  size: 254, 136
+  orig: 254, 136
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_5_red
+  rotate: false
+  xy: 1474, 1225
+  size: 254, 136
+  orig: 254, 136
+  offset: 0, 0
+  index: -1
+humanoid_hair_m_5_white
+  rotate: false
+  xy: 2581, 1414
+  size: 254, 136
+  orig: 254, 136
+  offset: 0, 0
+  index: -1
+humanoid_hands_skin_black
+  rotate: false
+  xy: 1689, 1010
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+humanoid_hands_skin_drow
+  rotate: false
+  xy: 1759, 1072
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+humanoid_hands_skin_goblin
+  rotate: false
+  xy: 441, 8
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+humanoid_hands_skin_vampire
+  rotate: false
+  xy: 502, 8
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+humanoid_hands_skin_white
+  rotate: false
+  xy: 1820, 1072
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+humanoid_head_skin_black
+  rotate: false
+  xy: 310, 889
+  size: 225, 225
+  orig: 225, 225
+  offset: 0, 0
+  index: -1
+humanoid_head_skin_drow
+  rotate: false
+  xy: 604, 1288
+  size: 225, 225
+  orig: 225, 225
+  offset: 0, 0
+  index: -1
+humanoid_head_skin_goblin
+  rotate: false
+  xy: 1005, 1543
+  size: 225, 225
+  orig: 225, 225
+  offset: 0, 0
+  index: -1
+humanoid_head_skin_vampire
+  rotate: false
+  xy: 1020, 1316
+  size: 225, 225
+  orig: 225, 225
+  offset: 0, 0
+  index: -1
+humanoid_head_skin_white
+  rotate: false
+  xy: 1247, 1325
+  size: 225, 225
+  orig: 225, 225
+  offset: 0, 0
+  index: -1
+humanoid_injury
+  rotate: false
+  xy: 3676, 1425
+  size: 41, 37
+  orig: 42, 40
+  offset: 1, 0
+  index: -1
+humanoid_limb_segment
+  rotate: false
+  xy: 397, 11
+  size: 42, 61
+  orig: 42, 69
+  offset: 0, 4
+  index: -1
+humanoid_misc_amulet
+  rotate: false
+  xy: 1689, 1061
+  size: 68, 60
+  orig: 73, 63
+  offset: 4, 0
+  index: -1
+humanoid_misc_stubble
+  rotate: true
+  xy: 3867, 1220
+  size: 203, 86
+  orig: 203, 86
+  offset: 0, 0
+  index: -1
+humanoid_mouth_grimace
+  rotate: true
+  xy: 360, 322
+  size: 69, 47
+  orig: 69, 47
+  offset: 0, 0
+  index: -1
+humanoid_mouth_happy
+  rotate: false
+  xy: 1380, 1229
+  size: 81, 51
+  orig: 89, 51
+  offset: 0, 0
+  index: -1
+humanoid_mouth_pursed
+  rotate: true
+  xy: 346, 1649
+  size: 52, 16
+  orig: 68, 16
+  offset: 8, 0
+  index: -1
+humanoid_mouth_stoic
+  rotate: false
+  xy: 2594, 1829
+  size: 91, 16
+  orig: 107, 16
+  offset: 8, 0
+  index: -1
+humanoid_mouth_surprised
+  rotate: true
+  xy: 310, 848
+  size: 39, 43
+  orig: 39, 43
+  offset: 0, 0
+  index: -1
+humanoid_mouth_whistle
+  rotate: false
+  xy: 1532, 804
+  size: 25, 29
+  orig: 25, 29
+  offset: 0, 0
+  index: -1
+humanoid_mustache_black
+  rotate: true
+  xy: 3279, 1041
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+humanoid_mustache_blonde
+  rotate: false
+  xy: 1435, 835
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+humanoid_mustache_brown
+  rotate: false
+  xy: 1566, 918
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+humanoid_mustache_red
+  rotate: false
+  xy: 1566, 867
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+humanoid_mustache_white
+  rotate: false
+  xy: 3330, 1032
+  size: 122, 49
+  orig: 122, 49
+  offset: 0, 0
+  index: -1
+humanoid_red_eyes
+  rotate: true
+  xy: 1232, 1692
+  size: 76, 51
+  orig: 76, 51
+  offset: 0, 0
+  index: -1
+humanoid_robe_black
+  rotate: false
+  xy: 3948, 962
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_robe_blue
+  rotate: true
+  xy: 647, 1010
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_robe_brown
+  rotate: false
+  xy: 764, 1154
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_robe_green
+  rotate: true
+  xy: 777, 1014
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_robe_purple
+  rotate: true
+  xy: 907, 1025
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_robe_red
+  rotate: true
+  xy: 913, 885
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_robe_yellow
+  rotate: true
+  xy: 1043, 931
+  size: 138, 128
+  orig: 138, 128
+  offset: 0, 0
+  index: -1
+humanoid_shield
+  rotate: false
+  xy: 626, 1150
+  size: 136, 136
+  orig: 136, 136
+  offset: 0, 0
+  index: -1
+humanoid_shoes_black
+  rotate: true
+  xy: 2761, 1129
+  size: 109, 65
+  orig: 109, 65
+  offset: 0, 0
+  index: -1
+humanoid_shoes_brown
+  rotate: true
+  xy: 2961, 1081
+  size: 109, 65
+  orig: 109, 65
+  offset: 0, 0
+  index: -1
+humanoid_shoulder_black
+  rotate: false
+  xy: 3867, 1148
+  size: 86, 70
+  orig: 86, 70
+  offset: 0, 0
+  index: -1
+humanoid_shoulder_brown
+  rotate: false
+  xy: 133, 2
+  size: 86, 70
+  orig: 86, 70
+  offset: 0, 0
+  index: -1
+humanoid_shoulder_gold
+  rotate: false
+  xy: 221, 2
+  size: 86, 70
+  orig: 86, 70
+  offset: 0, 0
+  index: -1
+humanoid_shoulder_grey
+  rotate: false
+  xy: 309, 2
+  size: 86, 70
+  orig: 86, 70
+  offset: 0, 0
+  index: -1
+humanoid_shoulder_red
+  rotate: false
+  xy: 1688, 1123
+  size: 86, 70
+  orig: 86, 70
+  offset: 0, 0
+  index: -1
+humanoid_shoulder_white
+  rotate: false
+  xy: 1776, 1123
+  size: 86, 70
+  orig: 86, 70
+  offset: 0, 0
+  index: -1
+humanoid_sickness
+  rotate: false
+  xy: 3147, 1267
+  size: 171, 195
+  orig: 171, 195
+  offset: 0, 0
+  index: -1
+humanoid_skeleton_eyes
+  rotate: true
+  xy: 904, 1165
+  size: 117, 85
+  orig: 118, 85
+  offset: 0, 0
+  index: -1
+humanoid_skeleton_mouth
+  rotate: false
+  xy: 1380, 1282
+  size: 92, 41
+  orig: 92, 41
+  offset: 0, 0
+  index: -1
+humanoid_weapon_arrow
+  rotate: true
+  xy: 579, 1130
+  size: 152, 45
+  orig: 152, 45
+  offset: 0, 0
+  index: -1
+humanoid_weapon_axe
+  rotate: false
+  xy: 2, 848
+  size: 306, 283
+  orig: 306, 283
+  offset: 0, 0
+  index: -1
+humanoid_weapon_bow
+  rotate: false
+  xy: 2432, 1847
+  size: 294, 199
+  orig: 294, 199
+  offset: 0, 0
+  index: -1
+humanoid_weapon_club
+  rotate: false
+  xy: 369, 1752
+  size: 312, 294
+  orig: 312, 294
+  offset: 0, 0
+  index: -1
+humanoid_weapon_giant_sword
+  rotate: false
+  xy: 2, 1133
+  size: 323, 276
+  orig: 323, 276
+  offset: 0, 0
+  index: -1
+humanoid_weapon_hammer
+  rotate: false
+  xy: 989, 1770
+  size: 298, 276
+  orig: 298, 276
+  offset: 0, 0
+  index: -1
+humanoid_weapon_knife
+  rotate: false
+  xy: 2234, 1216
+  size: 97, 145
+  orig: 97, 145
+  offset: 0, 0
+  index: -1
+humanoid_weapon_longsword
+  rotate: false
+  xy: 2, 1411
+  size: 342, 290
+  orig: 342, 290
+  offset: 0, 0
+  index: -1
+humanoid_weapon_mace
+  rotate: true
+  xy: 2829, 1192
+  size: 190, 206
+  orig: 190, 206
+  offset: 0, 0
+  index: -1
+humanoid_weapon_rapier
+  rotate: false
+  xy: 3320, 1272
+  size: 163, 190
+  orig: 163, 190
+  offset: 0, 0
+  index: -1
+humanoid_weapon_scimitar
+  rotate: true
+  xy: 3884, 1572
+  size: 226, 206
+  orig: 226, 206
+  offset: 0, 0
+  index: -1
+humanoid_weapon_spear
+  rotate: false
+  xy: 2, 1703
+  size: 365, 343
+  orig: 365, 343
+  offset: 0, 0
+  index: -1
+humanoid_weapon_staff
+  rotate: false
+  xy: 683, 1758
+  size: 304, 288
+  orig: 304, 288
+  offset: 0, 0
+  index: -1
+humanoid_weapon_sword
+  rotate: true
+  xy: 1948, 1363
+  size: 187, 215
+  orig: 187, 215
+  offset: 0, 0
+  index: -1
+humanoid_white_eyes
+  rotate: false
+  xy: 2123, 1142
+  size: 76, 51
+  orig: 76, 51
+  offset: 0, 0
+  index: -1

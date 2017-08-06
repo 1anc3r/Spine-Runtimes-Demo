@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -17,34 +17,43 @@
             android:id="@+id/btn_spine_boy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_blue_light"
-            android:text="SpineBoy"
-            android:textColor="@android:color/white" />
-
-        <Button
-            android:id="@+id/btn_speedy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:background="@android:color/holo_blue_light"
-            android:text="Speedy"
+            android:text="SpineBoy(Animation)"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_goblin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_blue_light"
-            android:text="Goblin"
+            android:text="Goblin(Skin)"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_human_oid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="HumanOid(Attachment)"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_speedy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="Speedy"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_alien"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_blue_light"
             android:text="Alien"
             android:textColor="@android:color/white" />
@@ -53,16 +62,25 @@
             android:id="@+id/btn_bone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_blue_light"
             android:text="Bone"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_power_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="PowerUp"
             android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btn_dragon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
+            android:layout_margin="8dp"
             android:background="@android:color/holo_blue_light"
             android:text="Dragon"
             android:textColor="@android:color/white" />

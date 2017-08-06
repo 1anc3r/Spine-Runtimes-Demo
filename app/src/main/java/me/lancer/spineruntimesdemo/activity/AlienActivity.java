@@ -2,9 +2,7 @@ package me.lancer.spineruntimesdemo.activity;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
@@ -61,7 +59,7 @@ public class AlienActivity extends AppActivity {
                     lastX = x;
                     lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    alien.animate();
+                    alien.setAnimate();
                 }
                 return true;
             }

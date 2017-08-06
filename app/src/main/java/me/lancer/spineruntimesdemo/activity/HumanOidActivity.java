@@ -7,44 +7,43 @@ import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AppActivity;
 
 import me.lancer.spineruntimesdemo.R;
-import me.lancer.spineruntimesdemo.model.SpineBoyHover;
+import me.lancer.spineruntimesdemo.model.HumanOid;
 
-public class SpineBoyHoverActivity extends AppActivity {
+public class HumanOidActivity extends AppActivity {
 
-    SpineBoyHover spineBoyHover;
-    View spineBoyHoverView;
+    String[] skins = {"drow", "elf", "goblin", "human black", "human white", "skeleton", "vampire"};
 
-    Button btnWalk, btnRun, btnJump, btnIdle, btnShoot, btnHit, btnDeath;
+    HumanOid humanOid;
+    View humanOidView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spine_boy);
+        setContentView(R.layout.activity_blank);
 
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.r = cfg.g = cfg.b = cfg.a = 8;
-        spineBoyHover = new SpineBoyHover();
-        spineBoyHoverView = initializeForView(spineBoyHover, cfg);
-        if (spineBoyHoverView instanceof SurfaceView) {
-            SurfaceView glView = (SurfaceView) spineBoyHoverView;
+        humanOid = new HumanOid();
+        humanOidView = initializeForView(humanOid, cfg);
+        if (humanOidView instanceof SurfaceView) {
+            SurfaceView glView = (SurfaceView) humanOidView;
             glView.getHolder().setFormat(PixelFormat.TRANSLUCENT);
             glView.setZOrderOnTop(true);
         }
-        addspineBoyHover();
+        addAlien();
     }
 
-    public void addspineBoyHover() {
+    public void addAlien() {
         final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
 
-        spineBoyHoverView.setOnTouchListener(new View.OnTouchListener() {
+        humanOidView.setOnTouchListener(new View.OnTouchListener() {
 
             float lastX, lastY;
 
@@ -58,11 +57,11 @@ public class SpineBoyHoverActivity extends AppActivity {
                 } else if (action == MotionEvent.ACTION_MOVE) {
                     layoutParams.x += (int) (x - lastX);
                     layoutParams.y += (int) (y - lastY);
-                    windowManager.updateViewLayout(spineBoyHoverView, layoutParams);
+                    windowManager.updateViewLayout(humanOidView, layoutParams);
                     lastX = x;
                     lastY = y;
                 } else if (action == MotionEvent.ACTION_UP || action == MotionEvent.ACTION_CANCEL) {
-                    spineBoyHover.animate();
+                    humanOid.animate();
                 }
                 return true;
             }
@@ -70,9 +69,9 @@ public class SpineBoyHoverActivity extends AppActivity {
         layoutParams.type = WindowManager.LayoutParams.TYPE_TOAST;
         layoutParams.flags = 40;
         layoutParams.width = dp2Px(144);
-        layoutParams.height = dp2Px(200);
+        layoutParams.height = dp2Px(144);
         layoutParams.format = -3;
-        windowManager.addView(spineBoyHoverView, layoutParams);
+        windowManager.addView(humanOidView, layoutParams);
     }
 
     public int dp2Px(float value) {
@@ -82,7 +81,7 @@ public class SpineBoyHoverActivity extends AppActivity {
 
     @Override
     protected void onDestroy() {
-        getWindowManager().removeView(spineBoyHoverView);
+        getWindowManager().removeView(humanOidView);
         super.onDestroy();
     }
 }

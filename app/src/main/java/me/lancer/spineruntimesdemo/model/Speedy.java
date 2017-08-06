@@ -83,22 +83,12 @@ public class Speedy extends ApplicationAdapter {
         atlas.dispose();
     }
 
-    public void animate() {
-        run();
-        runlinear();
-        runrough();
+    public void setAnimate() {
+        setAnimate("run");
     }
 
-    public void run() {
-        state.addAnimation(0, "run", true, 0);
-    }
-
-    public void runlinear() {
-        state.addAnimation(0, "run-linear", true, 0);
-    }
-
-    public void runrough() {
-        state.addAnimation(0, "run-rough", true, 0);
+    public void setAnimate(String animate) {
+        state.addAnimation(0, animate, true, 0);
     }
 
     public void zoomBig() {
