@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpineRuntimesDemo.iml" filepath="$PROJECT_DIR$/SpineRuntimesDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spine-Runtimes-Demo.iml" filepath="$PROJECT_DIR$/Spine-Runtimes-Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

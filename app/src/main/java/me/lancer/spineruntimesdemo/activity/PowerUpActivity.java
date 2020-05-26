@@ -37,7 +37,7 @@ public class PowerUpActivity extends AppActivity {
     }
 
     public void addAlien() {
-        final WindowManager windowManager = (WindowManager) getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
+        final WindowManager windowManager = getWindowManager();
         final WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
         layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
 
@@ -64,7 +64,7 @@ public class PowerUpActivity extends AppActivity {
                 return true;
             }
         });
-        layoutParams.type = WindowManager.LayoutParams.TYPE_TOAST;
+        layoutParams.type = WindowManager.LayoutParams.TYPE_APPLICATION;
         layoutParams.flags = 40;
         layoutParams.width = dp2Px(144);
         layoutParams.height = dp2Px(144);
@@ -79,7 +79,7 @@ public class PowerUpActivity extends AppActivity {
 
     @Override
     protected void onDestroy() {
-        getWindowManager().removeView(powerUpView);
+        getWindowManager().removeViewImmediate(powerUpView);
         super.onDestroy();
     }
 }
